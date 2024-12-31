@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: swiggy-app
+  labels:
+    app: swiggy-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: swiggy-app
+  template:
+    metadata:
+      labels:
+        app: swiggy-app
+    spec:
+      terminationGracePeriodSeconds: 30
+      containers:
+        - name: swiggy-app
+          image: captaingab/swiggy-clone-main:${{github.sha}}
+          imagePullPolicy: "Always"
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 3000

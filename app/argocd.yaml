@@ -1,0 +1,9 @@
+application: argocd
+clusterConfig:
+  namespace: argocd
+chart:
+  name: argocd
+  releaseName: argocd
+  repoURL:
+  targetRevision:
+  values: |

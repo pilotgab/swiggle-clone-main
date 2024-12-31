@@ -1,0 +1,9 @@
+application: traefik
+clusterConfig:
+  namespace: traefik
+chart:
+  name: traefik
+  releaseName: traefik
+  repoURL: "https://traefik"
+  targetRevision:
+  values: |
