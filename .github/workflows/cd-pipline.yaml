@@ -43,7 +43,8 @@ jobs:
           CI: true
 
       - name: Build
-        run: npm run build
+        run: |
+          CI='' npm run build
         working-directory: ./swiggy-app
 
       - name: Setup SonarQube Scanner
