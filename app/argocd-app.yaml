@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: "https://www.github.com/pilotgab/swiggy-clone-main.git"
+    repoURL: " https://github.com/pilotgab/swiggle-clone-main.git"
     targetRevision: main
     path: "manifest/* .yaml"
     directory:

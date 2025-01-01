@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: apps-appset-staging
+  name: apps-appset-swiggy
   namespace: argocd
 spec:
   generators:
     - git:
-        repoURL: "git@github.com:zumo/gitops-applications.git"
+        repoURL: "https://github.com/pilotgab/swiggle-clone-main.git"
         revision: main
         files:
           - path: "app/apps/apps-*.yaml"

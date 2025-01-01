@@ -1,9 +1,9 @@
-application: loki-stack
+application: loki-distributed
 clusterConfig:
   namespace: monitoring
 chart:
-  name: loki-stack
-  releaseName: loki-stack
+  name: loki-distributed
+  releaseName: loki-distributed
   repoURL: https://grafana.github.io/helm-charts
   targetRevision: 2.10.1
   values: |
